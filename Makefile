@@ -1,27 +1,24 @@
-NAME = Snek
+NAME = nibbler
 
-SRC = main.cpp
+FLAGS = -Wall -Wextra -Werror
 
-OBJ = $(SRC:.cpp=.o)
+FRAMEWORK = -framework Cocoa -framework OpenGL -framework IOKit -framework CoreFoundation -framework CoreVideo
 
-CFLAG = -Wall -Werror -Wextra -lSDL2
-
-INCLUDES = -I includes/
+GLFW = -I ext/glfw3/include -L ext/src/ -lglfw3
 
 all: $(NAME)
 
 $(NAME):
-	@clang++ $(INCLUDES) -c $(SRC)
-	@echo "OBJECTS CREATED"
-	@clang++ $(CFLAG) $(INCLUDES) -o $(NAME) $(OBJ)
-	@echo "PROJECT CREATED"
+	@brew install cmake
+	@git clone https://github.com/glfw/glfw.git ext/glfw3
+	echo "cd ext \ncmake glfw3 \nmake \
+		 \ncurl "http://glad.dav1d.de/generated/tmprwM8JXglad/glad.zip" > glad.zip \nunzip glad.zip \ncd .." >> ext/make.sh
+	sh ext/make.sh
+	make compile
 
-clean:
-	@/bin/rm -f $(OBJ)
-	@echo "OBJECTS CLEANED"
+compile:
+	clang++ main.cpp -o $(NAME) $(GLFW) $(FRAMEWORK)
 
-fclean: clean
-	@/bin/rm -f $(NAME)
-	@echo "ALL FILES CLEANED"
-
-re: fclean all
+clean: 
+	@rm -rf ext/
+	@rm $(NAME)
