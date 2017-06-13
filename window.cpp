@@ -85,5 +85,15 @@ void window::clear() const
 {
     SDL_SetRenderDrawColor(_render, 0 ,0, 200, 255);
     SDL_RenderClear(_render);
+
+    SDL_Rect rect;
+
+    rect.w = 120;
+    rect.h = 120;
+    rect.x = (_width / 2) - (rect.w / 2);
+    rect.y = (_height / 2) - (rect.h / 2);
+
+    SDL_SetRenderDrawColor(_render, 200 ,0, 200, 255);
+    SDL_RenderFillRect(_render, &rect);
     SDL_RenderPresent(_render);
 }
