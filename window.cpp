@@ -15,6 +15,7 @@ _title(title), _width(width), _height(height)
 
 window::~window()
 {
+    SDL_DestroyRenderer(_render);
     SDL_DestroyWindow(_window);
     SDL_Quit();    
 }
@@ -40,6 +41,15 @@ bool window::init()
     {
         std::cerr << "Failed to create window\n";
         return (0);
+    }
+
+    _render = SDL_CreateRenderer(_window, -1, SDL_RENDERER_ACCELERATED);
+
+    if (_render == nullptr)
+    {
+         std::cerr << "Failed to create renderer\n";
+
+         return (0);
     }
 
     return (true);
@@ -69,4 +79,11 @@ void window::pollEvents()
             break;
         }
     }
+}
+
+void window::clear() const
+{
+    SDL_SetRenderDrawColor(_render, 0 ,0, 200, 255);
+    SDL_RenderClear(_render);
+    SDL_RenderPresent(_render);
 }

@@ -7,6 +7,7 @@ int main(int argc, char **argv)
     while (window.isClosed())
     {
         window.pollEvents();
+        window.clear();
     }
     return (0);
 }
