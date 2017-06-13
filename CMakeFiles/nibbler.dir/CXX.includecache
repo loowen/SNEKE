@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/test.cpp
+window.hpp
+/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/window.hpp
+
+/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/window.cpp
+window.hpp
+/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/window.hpp
+
+/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/window.hpp
+SDL2/SDL.h
+-
+cstdlib
+-
+string
+-
+iostream
+-
+

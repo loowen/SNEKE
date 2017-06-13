@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/nibbler.dir/test.cpp.o CMakeFiles/nibbler.dir/window.cpp.o  -o nibbler -Wl,-rpath,/Library/Frameworks -framework SDL2 
