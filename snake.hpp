@@ -1,22 +1,22 @@
+#pragma once
 #include <iostream>
 #include <vector>
-#include <ncurses.h>
 #include <cstdlib>
-#ifndef  SNAKE_H
-#define  SNAKE_H
+#include "snakePart.hpp"
 
 class SnakeClass
 {
-    struct snakepart
-    {
-        int x, y;
-        snakepart(int col, int row);
-        snakepart();
-    };
-    int points, del, maxwidth, maxheight; //move max var to reder ?
-    char direction, partchar, oldchar, pickup;
-    bool get;
-    snakepart food;
-};
+    public:
+    SnakeClass(SnakeClass const & src);
+    SnakeClass();
+    ~SnakeClass();
+    std::vector<snakePart> Snek;
+    void move();
+    
+    SnakeClass & operator=(SnakeClass const & cpp);
 
-#endif
+
+    private:
+    int _dir;
+
+};
