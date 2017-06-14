@@ -13,10 +13,10 @@ ENDIF (APPLE)
 
 include_directories(nibbler includes)
 
-set(SOURCE_FILES test.cpp window.cpp snake.cpp snakePart.cpp)
+set(SOURCE_FILES test.cpp SDL-Lib/window.cpp snake.cpp snakePart.cpp)
 
 
-set(INCLUDE_FILES window.hpp snake.hpp snakePart.hpp)
+set(INCLUDE_FILES SDL-Lib/window.hpp snake.hpp snakePart.hpp)
 
 add_executable(nibbler ${SOURCE_FILES} ${INCLUDE_FILES})
 

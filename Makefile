@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake
+CMAKE_COMMAND = /nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake
 
 # The command to remove a file.
-RM = /nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake -E remove -f
+RM = /nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
+CMAKE_SOURCE_DIR = /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
+CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE/CMakeFiles /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,87 @@ nibbler/fast:
 	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/build
 .PHONY : nibbler/fast
 
+SDL-Lib/window.o: SDL-Lib/window.cpp.o
+
+.PHONY : SDL-Lib/window.o
+
+# target to build an object file
+SDL-Lib/window.cpp.o:
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/SDL-Lib/window.cpp.o
+.PHONY : SDL-Lib/window.cpp.o
+
+SDL-Lib/window.i: SDL-Lib/window.cpp.i
+
+.PHONY : SDL-Lib/window.i
+
+# target to preprocess a source file
+SDL-Lib/window.cpp.i:
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/SDL-Lib/window.cpp.i
+.PHONY : SDL-Lib/window.cpp.i
+
+SDL-Lib/window.s: SDL-Lib/window.cpp.s
+
+.PHONY : SDL-Lib/window.s
+
+# target to generate assembly for a file
+SDL-Lib/window.cpp.s:
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/SDL-Lib/window.cpp.s
+.PHONY : SDL-Lib/window.cpp.s
+
+snake.o: snake.cpp.o
+
+.PHONY : snake.o
+
+# target to build an object file
+snake.cpp.o:
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/snake.cpp.o
+.PHONY : snake.cpp.o
+
+snake.i: snake.cpp.i
+
+.PHONY : snake.i
+
+# target to preprocess a source file
+snake.cpp.i:
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/snake.cpp.i
+.PHONY : snake.cpp.i
+
+snake.s: snake.cpp.s
+
+.PHONY : snake.s
+
+# target to generate assembly for a file
+snake.cpp.s:
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/snake.cpp.s
+.PHONY : snake.cpp.s
+
+snakePart.o: snakePart.cpp.o
+
+.PHONY : snakePart.o
+
+# target to build an object file
+snakePart.cpp.o:
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/snakePart.cpp.o
+.PHONY : snakePart.cpp.o
+
+snakePart.i: snakePart.cpp.i
+
+.PHONY : snakePart.i
+
+# target to preprocess a source file
+snakePart.cpp.i:
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/snakePart.cpp.i
+.PHONY : snakePart.cpp.i
+
+snakePart.s: snakePart.cpp.s
+
+.PHONY : snakePart.s
+
+# target to generate assembly for a file
+snakePart.cpp.s:
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/snakePart.cpp.s
+.PHONY : snakePart.cpp.s
+
 test.o: test.cpp.o
 
 .PHONY : test.o
@@ -150,33 +231,6 @@ test.cpp.s:
 	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/test.cpp.s
 .PHONY : test.cpp.s
 
-window.o: window.cpp.o
-
-.PHONY : window.o
-
-# target to build an object file
-window.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/window.cpp.o
-.PHONY : window.cpp.o
-
-window.i: window.cpp.i
-
-.PHONY : window.i
-
-# target to preprocess a source file
-window.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/window.cpp.i
-.PHONY : window.cpp.i
-
-window.s: window.cpp.s
-
-.PHONY : window.s
-
-# target to generate assembly for a file
-window.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/window.cpp.s
-.PHONY : window.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... nibbler"
+	@echo "... SDL-Lib/window.o"
+	@echo "... SDL-Lib/window.i"
+	@echo "... SDL-Lib/window.s"
+	@echo "... snake.o"
+	@echo "... snake.i"
+	@echo "... snake.s"
+	@echo "... snakePart.o"
+	@echo "... snakePart.i"
+	@echo "... snakePart.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
-	@echo "... window.o"
-	@echo "... window.i"
-	@echo "... window.s"
 .PHONY : help
 
 

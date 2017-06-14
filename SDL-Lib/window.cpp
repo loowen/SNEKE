@@ -61,22 +61,44 @@ bool window::isClosed() const
 }
 
 
-void window::pollEvents()
+void window::pollEvents(SnakeClass & snerk)
 {
     SDL_Event event;
     if (SDL_PollEvent(&event))
     {
-
-    std::cout << event.type;
         switch (event.type)
         {
-            case SDL_KEYDOWN:
-             SDL_Quit();
-            _closed = false; 
-            break;
+            case SDL_KEYDOWN :
+                switch (event.key.keysym.sym)
+                {
+                    case SDLK_ESCAPE :
+                        SDL_Quit();
+                        _closed = false;
+                        break;
+                    
+                    case SDLK_UP :
+                        snerk.setDir(1);
+                        break;
+                    
+                    case SDLK_DOWN :
+                        snerk.setDir(-1);
+                        break;
+                    
+                    case SDLK_LEFT :
+                        snerk.setDir(2);
+                        break;
+
+                    case SDLK_RIGHT :
+                        snerk.setDir(-2);
+                        break;
+
+                    default:
+                        break; 
+                }
+                break;
 
             default:
-            break;
+                break;
         }
     }
 }

@@ -27,6 +27,16 @@ SnakeClass & SnakeClass::operator=(SnakeClass const & cpp)
     return *this;
 }
 
+int SnakeClass::getDir()
+{
+    return this->_dir;
+}
+
+void SnakeClass::setDir(int i)
+{
+    this->_dir = i;
+}
+
 void SnakeClass::move()
 {
     int i =0;

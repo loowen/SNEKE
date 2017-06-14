@@ -12,6 +12,8 @@ class SnakeClass
     ~SnakeClass();
     std::vector<snakePart> Snek;
     void move();
+    void setDir(int i);
+    int getDir();
     
     SnakeClass & operator=(SnakeClass const & cpp);
 

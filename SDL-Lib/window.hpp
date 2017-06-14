@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <string>
 #include <iostream>
+#include "../snake.hpp"
 #ifndef WINDOW_H
 #define WINDOW_H
 
@@ -11,7 +12,7 @@ public:
     window(const std::string &title, int width, int height);
     ~window();
 
-    void pollEvents();
+    void pollEvents(SnakeClass & snerk);
     void clear() const;
 
     bool isClosed() const;

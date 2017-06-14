@@ -20,3 +20,8 @@ snakePart::snakePart(int col, int row)
     this->x = col;
     this->y = row;
 }
+
+snakePart & snakePart::operator=(snakePart const & src)
+{
+    return *this;
+}

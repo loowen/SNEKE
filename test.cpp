@@ -1,4 +1,4 @@
-#include "window.hpp"
+#include "SDL-Lib/window.hpp"
 #include "snake.hpp"
 
 int main(int argc, char **argv)
@@ -8,8 +8,9 @@ int main(int argc, char **argv)
 
     while (window.isClosed())
     {
-        window.pollEvents();
+        window.pollEvents(snerk);
         window.clear();
     }
+    std::cout << "Snake direction: " << snerk.getDir();
     return (0);
 }
