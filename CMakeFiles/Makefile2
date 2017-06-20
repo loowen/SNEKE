@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
 CMakeFiles/nibbler.dir/all:
 	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/depend
 	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=1,2,3 "Built target nibbler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=4,5,6,7 "Built target nibbler"
 .PHONY : CMakeFiles/nibbler.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/nibbler.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nibbler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nibbler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles 0
 .PHONY : CMakeFiles/nibbler.dir/rule
@@ -93,6 +93,61 @@ CMakeFiles/nibbler.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/nibbler.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory GUILib1
+
+# Convenience name for "all" pass in the directory.
+GUILib1/all: GUILib1/CMakeFiles/BasicRender.dir/all
+
+.PHONY : GUILib1/all
+
+# Convenience name for "clean" pass in the directory.
+GUILib1/clean: GUILib1/CMakeFiles/BasicRender.dir/clean
+
+.PHONY : GUILib1/clean
+
+# Convenience name for "preinstall" pass in the directory.
+GUILib1/preinstall:
+
+.PHONY : GUILib1/preinstall
+
+#=============================================================================
+# Target rules for target GUILib1/CMakeFiles/BasicRender.dir
+
+# All Build rule for target.
+GUILib1/CMakeFiles/BasicRender.dir/all:
+	$(MAKE) -f GUILib1/CMakeFiles/BasicRender.dir/build.make GUILib1/CMakeFiles/BasicRender.dir/depend
+	$(MAKE) -f GUILib1/CMakeFiles/BasicRender.dir/build.make GUILib1/CMakeFiles/BasicRender.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=1,2,3 "Built target BasicRender"
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/all
+
+# Include target in all.
+all: GUILib1/CMakeFiles/BasicRender.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+GUILib1/CMakeFiles/BasicRender.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 GUILib1/CMakeFiles/BasicRender.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles 0
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/rule
+
+# Convenience name for target.
+BasicRender: GUILib1/CMakeFiles/BasicRender.dir/rule
+
+.PHONY : BasicRender
+
+# clean rule for target.
+GUILib1/CMakeFiles/BasicRender.dir/clean:
+	$(MAKE) -f GUILib1/CMakeFiles/BasicRender.dir/build.make GUILib1/CMakeFiles/BasicRender.dir/clean
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/clean
+
+# clean rule for target.
+clean: GUILib1/CMakeFiles/BasicRender.dir/clean
 
 .PHONY : clean
 

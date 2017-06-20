@@ -81,43 +81,71 @@ CMakeFiles/nibbler.dir/test.cpp.o.provides: CMakeFiles/nibbler.dir/test.cpp.o.re
 CMakeFiles/nibbler.dir/test.cpp.o.provides.build: CMakeFiles/nibbler.dir/test.cpp.o
 
 
-CMakeFiles/nibbler.dir/window.cpp.o: CMakeFiles/nibbler.dir/flags.make
-CMakeFiles/nibbler.dir/window.cpp.o: window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nibbler.dir/window.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nibbler.dir/window.cpp.o -c /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/window.cpp
+CMakeFiles/nibbler.dir/snake.cpp.o: CMakeFiles/nibbler.dir/flags.make
+CMakeFiles/nibbler.dir/snake.cpp.o: snake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nibbler.dir/snake.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nibbler.dir/snake.cpp.o -c /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snake.cpp
 
-CMakeFiles/nibbler.dir/window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nibbler.dir/window.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/window.cpp > CMakeFiles/nibbler.dir/window.cpp.i
+CMakeFiles/nibbler.dir/snake.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nibbler.dir/snake.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snake.cpp > CMakeFiles/nibbler.dir/snake.cpp.i
 
-CMakeFiles/nibbler.dir/window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nibbler.dir/window.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/window.cpp -o CMakeFiles/nibbler.dir/window.cpp.s
+CMakeFiles/nibbler.dir/snake.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nibbler.dir/snake.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snake.cpp -o CMakeFiles/nibbler.dir/snake.cpp.s
 
-CMakeFiles/nibbler.dir/window.cpp.o.requires:
+CMakeFiles/nibbler.dir/snake.cpp.o.requires:
 
-.PHONY : CMakeFiles/nibbler.dir/window.cpp.o.requires
+.PHONY : CMakeFiles/nibbler.dir/snake.cpp.o.requires
 
-CMakeFiles/nibbler.dir/window.cpp.o.provides: CMakeFiles/nibbler.dir/window.cpp.o.requires
-	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/window.cpp.o.provides.build
-.PHONY : CMakeFiles/nibbler.dir/window.cpp.o.provides
+CMakeFiles/nibbler.dir/snake.cpp.o.provides: CMakeFiles/nibbler.dir/snake.cpp.o.requires
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/snake.cpp.o.provides.build
+.PHONY : CMakeFiles/nibbler.dir/snake.cpp.o.provides
 
-CMakeFiles/nibbler.dir/window.cpp.o.provides.build: CMakeFiles/nibbler.dir/window.cpp.o
+CMakeFiles/nibbler.dir/snake.cpp.o.provides.build: CMakeFiles/nibbler.dir/snake.cpp.o
+
+
+CMakeFiles/nibbler.dir/snakePart.cpp.o: CMakeFiles/nibbler.dir/flags.make
+CMakeFiles/nibbler.dir/snakePart.cpp.o: snakePart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nibbler.dir/snakePart.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nibbler.dir/snakePart.cpp.o -c /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snakePart.cpp
+
+CMakeFiles/nibbler.dir/snakePart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nibbler.dir/snakePart.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snakePart.cpp > CMakeFiles/nibbler.dir/snakePart.cpp.i
+
+CMakeFiles/nibbler.dir/snakePart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nibbler.dir/snakePart.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snakePart.cpp -o CMakeFiles/nibbler.dir/snakePart.cpp.s
+
+CMakeFiles/nibbler.dir/snakePart.cpp.o.requires:
+
+.PHONY : CMakeFiles/nibbler.dir/snakePart.cpp.o.requires
+
+CMakeFiles/nibbler.dir/snakePart.cpp.o.provides: CMakeFiles/nibbler.dir/snakePart.cpp.o.requires
+	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/snakePart.cpp.o.provides.build
+.PHONY : CMakeFiles/nibbler.dir/snakePart.cpp.o.provides
+
+CMakeFiles/nibbler.dir/snakePart.cpp.o.provides.build: CMakeFiles/nibbler.dir/snakePart.cpp.o
 
 
 # Object files for target nibbler
 nibbler_OBJECTS = \
 "CMakeFiles/nibbler.dir/test.cpp.o" \
-"CMakeFiles/nibbler.dir/window.cpp.o"
+"CMakeFiles/nibbler.dir/snake.cpp.o" \
+"CMakeFiles/nibbler.dir/snakePart.cpp.o"
 
 # External object files for target nibbler
 nibbler_EXTERNAL_OBJECTS =
 
 nibbler: CMakeFiles/nibbler.dir/test.cpp.o
-nibbler: CMakeFiles/nibbler.dir/window.cpp.o
+nibbler: CMakeFiles/nibbler.dir/snake.cpp.o
+nibbler: CMakeFiles/nibbler.dir/snakePart.cpp.o
 nibbler: CMakeFiles/nibbler.dir/build.make
+nibbler: /nfs/zfs-student-6/users/meckhard/.brew/lib/libSDL2.dylib
+nibbler: /nfs/zfs-student-6/users/meckhard/.brew/lib/libSDL2_ttf.dylib
 nibbler: CMakeFiles/nibbler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable nibbler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable nibbler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nibbler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,7 +154,8 @@ CMakeFiles/nibbler.dir/build: nibbler
 .PHONY : CMakeFiles/nibbler.dir/build
 
 CMakeFiles/nibbler.dir/requires: CMakeFiles/nibbler.dir/test.cpp.o.requires
-CMakeFiles/nibbler.dir/requires: CMakeFiles/nibbler.dir/window.cpp.o.requires
+CMakeFiles/nibbler.dir/requires: CMakeFiles/nibbler.dir/snake.cpp.o.requires
+CMakeFiles/nibbler.dir/requires: CMakeFiles/nibbler.dir/snakePart.cpp.o.requires
 
 .PHONY : CMakeFiles/nibbler.dir/requires
 

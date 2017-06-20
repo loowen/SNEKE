@@ -23,5 +23,6 @@ snakePart::snakePart(int col, int row)
 
 snakePart & snakePart::operator=(snakePart const & src)
 {
+    src.x;
     return *this;
 }

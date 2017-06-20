@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake
+CMAKE_COMMAND = /nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake
 
 # The command to remove a file.
-RM = /nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake -E remove -f
+RM = /nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE
+CMAKE_SOURCE_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE
+CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE/CMakeFiles /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/lhamlyn/Work/SNEKE/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,18 @@ nibbler/fast:
 	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/build
 .PHONY : nibbler/fast
 
-SDL-Lib/window.o: SDL-Lib/window.cpp.o
+#=============================================================================
+# Target rules for targets named BasicRender
 
-.PHONY : SDL-Lib/window.o
+# Build rule for target.
+BasicRender: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BasicRender
+.PHONY : BasicRender
 
-# target to build an object file
-SDL-Lib/window.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/SDL-Lib/window.cpp.o
-.PHONY : SDL-Lib/window.cpp.o
-
-SDL-Lib/window.i: SDL-Lib/window.cpp.i
-
-.PHONY : SDL-Lib/window.i
-
-# target to preprocess a source file
-SDL-Lib/window.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/SDL-Lib/window.cpp.i
-.PHONY : SDL-Lib/window.cpp.i
-
-SDL-Lib/window.s: SDL-Lib/window.cpp.s
-
-.PHONY : SDL-Lib/window.s
-
-# target to generate assembly for a file
-SDL-Lib/window.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler.dir/build.make CMakeFiles/nibbler.dir/SDL-Lib/window.cpp.s
-.PHONY : SDL-Lib/window.cpp.s
+# fast build rule for target.
+BasicRender/fast:
+	$(MAKE) -f GUILib1/CMakeFiles/BasicRender.dir/build.make GUILib1/CMakeFiles/BasicRender.dir/build
+.PHONY : BasicRender/fast
 
 snake.o: snake.cpp.o
 
@@ -240,9 +226,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... nibbler"
-	@echo "... SDL-Lib/window.o"
-	@echo "... SDL-Lib/window.i"
-	@echo "... SDL-Lib/window.s"
+	@echo "... BasicRender"
 	@echo "... snake.o"
 	@echo "... snake.i"
 	@echo "... snake.s"

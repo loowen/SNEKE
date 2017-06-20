@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snake.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles/nibbler.dir/snake.cpp.o"
+  "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snakePart.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles/nibbler.dir/snakePart.cpp.o"
   "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/test.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles/nibbler.dir/test.cpp.o"
-  "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/window.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles/nibbler.dir/window.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -13,6 +14,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "nibbler"
   "includes"
+  "/nfs/zfs-student-6/users/meckhard/.brew/include"
   )
 
 # Targets to which this target links.

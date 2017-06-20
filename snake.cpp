@@ -24,6 +24,8 @@ SnakeClass::~SnakeClass()
 
 SnakeClass & SnakeClass::operator=(SnakeClass const & cpp)
 {
+    SnakeClass *meh = new SnakeClass(cpp);
+    meh->getDir();
     return *this;
 }
 
