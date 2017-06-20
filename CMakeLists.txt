@@ -15,10 +15,10 @@ SET(EXTRA_LIBS ${SDL_LIBRARY} ${SDL_TTF_LIBRARY})
 
 include_directories(nibbler includes ~/.brew/include/)
 
-set(SOURCE_FILES test.cpp snake.cpp snakePart.cpp)
+set(SOURCE_FILES test.cpp snake.cpp Entity.cpp FoodFactory.cpp Food.cpp snakePart.cpp)
 
 
-set(INCLUDE_FILES snake.hpp snakePart.hpp)
+set(INCLUDE_FILES snake.hpp Entity.hpp FoodFactory.hpp Food.hpp snakePart.hpp)
 
 add_executable(nibbler ${SOURCE_FILES} ${INCLUDE_FILES})
 

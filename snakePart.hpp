@@ -1,13 +1,17 @@
 #pragma once
 
-class snakePart
+#include "Entity.hpp"
+
+class snakePart : public Entity
     {
         public:
-        int x, y;
-        bool head;
+        bool isHead()const;
         snakePart(snakePart const & src);
-        snakePart(int col, int row);
+        snakePart(int col, int row, bool head);
         snakePart();
         ~snakePart();
         snakePart & operator=(snakePart const & src);
+        bool operator==(snakePart const & src);
+        private:
+        bool _head;
     };

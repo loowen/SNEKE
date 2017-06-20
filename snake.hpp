@@ -12,10 +12,13 @@ class SnakeClass
     ~SnakeClass();
     std::vector<snakePart> Snek;
     void move();
+    bool SelfCollision();
     void setDir(int i);
-    int getDir();
+    int getDir()const;
+    int getSize();
     
     SnakeClass & operator=(SnakeClass const & cpp);
+    snakePart & operator[](int a);
 
 
     private:

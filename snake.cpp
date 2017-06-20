@@ -11,25 +11,34 @@ SnakeClass::SnakeClass()
     Snek.reserve (4);
     for (int it = 0; it != 4; ++it)
     {
-        this->Snek[it].x = x;
-        this->Snek[it].y = y--;
+        this->Snek[it].setX(x);
+        this->Snek[it].setY(y++);
     }
     this->_dir = 1;
 }
 
 SnakeClass::~SnakeClass()
 {
-
+    std::cout << "die";
 }
 
 SnakeClass & SnakeClass::operator=(SnakeClass const & cpp)
 {
-    SnakeClass *meh = new SnakeClass(cpp);
-    meh->getDir();
+    cpp.getDir();
     return *this;
 }
 
-int SnakeClass::getDir()
+int SnakeClass::getSize()
+{
+    int i =0;
+    for (std::vector<snakePart>::iterator it = this->Snek.begin(); it != this->Snek.end(); ++it)
+    {
+        i++;
+    }
+    return i+1;
+}
+
+int SnakeClass::getDir()const
 {
     return this->_dir;
 }
@@ -41,35 +50,51 @@ void SnakeClass::setDir(int i)
 
 void SnakeClass::move()
 {
-    int i =0;
-    for (std::vector<snakePart>::reverse_iterator it = this->Snek.rbegin(); it != this->Snek.rend(); ++it)
-    {
-        i++;
-    }
-    for (int it = i; it != 0; --it)
+    for (int it = this->getSize()-1; it >= 0; --it)
     {
         if (it != 0)
         {
-            this->Snek[it].x = this->Snek[it+1].x;
-            this->Snek[it].y = this->Snek[it+1].y;
+            this->Snek[it].setX(this->Snek[it+1].getX());
+            this->Snek[it].setY(this->Snek[it+1].getY());
         }
         else
         {
             switch(this->_dir)
             {
                 case 1:
-                    this->Snek[it].y = this->Snek[it].y - 1;
+                    if (this->Snek[it].getY() - 1 != 0)
+                        this->Snek[it].setY(this->Snek[it].getY() - 1);
                     break;
                 case -1:
-                    this->Snek[it].y = this->Snek[it].y + 1;
+                    this->Snek[it].setY(this->Snek[it].getY() + 1);
                     break;
                 case 2:
-                    this->Snek[it].x = this->Snek[it].x - 1;
+                    if(this->Snek[it].getX() - 1 != 0)
+                        this->Snek[it].setX(this->Snek[it].getX() - 1);
                     break;
                 case -2:
-                    this->Snek[it].x = this->Snek[it].x + 1;
+                    this->Snek[it].setX(this->Snek[it].getX() + 1);
+                    break;
             }
 
         }
     }
+}
+
+bool SnakeClass::SelfCollision()
+{
+
+    for(int it = this->getSize()-1; it !=1; --it)
+    {
+        if (Snek[it] == Snek[0])
+        {
+            return (1);
+        }
+    }
+    return (0);
+}
+
+snakePart & SnakeClass::operator[](int a)
+{
+    return this->Snek[a];
 }

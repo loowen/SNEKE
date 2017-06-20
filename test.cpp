@@ -19,7 +19,7 @@ int main()
     auto create = reinterpret_cast<GUI *(*)(const std::string &, int , int )> (createV);
 
 //    void * dlopen(const char *SDL-Lib, int flag);
-    GUI *fui = create("SDL",100,100); //from library
+    GUI *fui = create("SDL",800,800); //from library
     int i;
     SnakeClass snerk;
 
