@@ -7,7 +7,7 @@ SnakeClass::SnakeClass(SnakeClass const & src)
 
 SnakeClass::SnakeClass()
 {
-    int x = 100, y = 100;
+    int x = 400, y = 400;
     Snek.reserve (4);
     for (int it = 0; it != 4; ++it)
     {

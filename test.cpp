@@ -33,9 +33,10 @@ int main()
         if (i != 0 && i != 3)
         {
             snerk.setDir(i);
+            snerk.move();
         }
         snerk.FoodCollision(food);
-        fui->clear();
+        fui->clear(snerk, food);
     }
     std::cout << "Snake direction: " << snerk.getDir();
     return (0); 

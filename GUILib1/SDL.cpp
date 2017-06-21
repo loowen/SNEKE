@@ -1,7 +1,8 @@
 #include "SDL.hpp"
+#include "../snake.hpp"
 
 
-extern "C" GUI *create(const std::string &title, int width, int height)
+extern "C" GUI* create(const std::string &title, int width, int height)
 {
     return (new SDL(title, width, height));
 }
@@ -162,44 +163,46 @@ int SDL::pollEvents()
     return 3;
 }
 
-
-void SDL::draw() const
+void SDL::draw(int x, int y, int r, int g, int b)
 {
         SDL_Rect rect;
 
-    rect.w = _w;
-    rect.h = _h;
-    rect.x = _x;
-    rect.y = _y;
+    rect.w = 120;
+    rect.h = 120;
+    rect.x = x;
+    rect.y = y;
 
-    int r = _r;
-    int g = _g;
-    int b = _b;
-    int a = _a;
-
-    r = g; 
-    g = r; 
-    b = a; 
-    a = b;
-
-    SDL_SetRenderDrawColor(_render, 200 ,0, 200, 255);
+SDL_SetRenderDrawColor(_render, r ,g, b, 255);
+//    SDL_SetRenderDrawColor(_render, 200 ,0, 200, 255);
     SDL_RenderFillRect(_render, &rect);
+
+    //SDL_RenderPresent(_render);
 }
 
-void SDL::clear() const
+void SDL::clear(SnakeClass & src, FoodFactory & food)
 {
     SDL_SetRenderDrawColor(_render, 0 ,0, 200, 255);
     SDL_RenderClear(_render);
 
-    /*SDL_Rect rect;
+    int i = 0;
 
-    rect.w = 120;
-    rect.h = 120;
-    rect.x = (_width / 2) - (rect.w / 2);
-    rect.y = (_height / 2) - (rect.h / 2);
+    while (i < src.getSize())
+    {
+        draw(src[i].getX() , src[i].getY(), 0, 225, 0);
+        i++;
+    }
 
-    SDL_SetRenderDrawColor(_render, 200 ,0, 200, 255);
-    SDL_RenderFillRect(_render, &rect);*/
-    draw();
+    int j = 0;
+    while (j < 5)
+    {
+        if (food[j].getType() == 1)
+        {
+            draw(food[j].getX(), food[j].getY(), 225, 0, 0);
+        }
+        j++;
+    }
+
+  //  draw();
+    //draw();
     SDL_RenderPresent(_render);
 }

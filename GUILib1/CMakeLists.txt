@@ -17,9 +17,9 @@ FIND_LIBRARY(SDL_IMAGE_LIBRARY NAMES SDL2_image HINTS ${BREW_LIB} )
 MARK_AS_ADVANCED (SDL_LIBRARY)
 SET(EXTRA_LIBS ${SDL_LIBRARY} ${SDL_TTF_LIBRARY} ${SDL_IMAGE_LIBRARY})
 
-set(SOURCE_FILES SDL.cpp ../iGUI.cpp)
+set(SOURCE_FILES SDL.cpp ../iGUI.cpp ../snake.cpp ../FoodFactory.cpp ../Entity.cpp ../Food.cpp ../snakePart.cpp)
 
-set(HEADERS SDL.hpp ../iGUI.hpp)
+set(HEADERS SDL.hpp ../iGUI.hpp ../snake.hpp ../FoodFactory.hpp ../Entity.hpp ../Food.hpp ../snakePart.hpp)
 
 
 add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES} ${HEADERS})

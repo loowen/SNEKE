@@ -17,7 +17,8 @@ public:
 
 
     int pollEvents();
-    void clear() const;
+  //  void clear();
+  void clear(SnakeClass & src, FoodFactory & food);
 
     bool isClosed() const;
 
@@ -28,16 +29,15 @@ public:
   //  SDL_Window* getwindow();
  //   SDL_Renderer* getrender();
 
-    void draw() const;
+   void draw(int x, int y, int r, int g, int b);
 
     SDL & operator=(SDL const & src);
 
 private:
      bool init();
 
-    int _w, _h;
-    int _x, _y;
-    int _r, _g, _b, _a;
+  /* int _x, _y;
+    int _r, _g, _b, _a; */
 
 protected:
 
