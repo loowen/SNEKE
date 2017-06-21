@@ -8,15 +8,24 @@ SnakeClass::SnakeClass(SnakeClass const & src)
 SnakeClass::SnakeClass()
 {
     int x = 400, y = 400;
-    Snek.reserve (4);
+    snakePart * n = new snakePart(x,y,false);
+    //snek.push_back(n)
     for (int it = 0; it != 4; ++it)
     {
         if(it == 0)
         {
-            this->Snek[it].setHead(true);
+            n = new snakePart(x,y,true);
+            Snek.push_back(*n);
+            //this->Snek[it].setHead(true);
         }
-        this->Snek[it].setX(x);
-        this->Snek[it].setY(y++);
+        else
+        {
+            n = new snakePart(x,y,false);
+            Snek.push_back(*n);
+        }
+        //this->Snek[it].setX(x);
+        //this->Snek[it].setY(y);
+        y++;
     }
     this->_dir = 1;
 }
@@ -34,12 +43,7 @@ SnakeClass & SnakeClass::operator=(SnakeClass const & cpp)
 
 int SnakeClass::getSize()
 {
-    int i =0;
-    for (std::vector<snakePart>::iterator it = this->Snek.begin(); it != this->Snek.end(); ++it)
-    {
-        i++;
-    }
-    return i+1;
+    return this->Snek.size();
 }
 
 int SnakeClass::getDir()const
@@ -60,8 +64,8 @@ void SnakeClass::move()
     {
         if (it != 0)
         {
-            this->Snek[it].setX(this->Snek[it+1].getX());
-            this->Snek[it].setY(this->Snek[it+1].getY());
+            this->Snek[it].setX(this->Snek[it-1].getX());
+            this->Snek[it].setY(this->Snek[it-1].getY());
         }
         else
         {
@@ -92,9 +96,9 @@ void SnakeClass::move()
 }
 
 bool SnakeClass::SelfCollision()
-{
-
-    for(int it = this->getSize()-1; it !=1; --it)
+{   
+    std::cout << "it" <<std::endl;
+    for(int it = this->getSize()-1; it > 0 ; --it)
     {
         if (Snek[it] == Snek[0])
         {

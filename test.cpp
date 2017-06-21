@@ -7,6 +7,15 @@
 
 int main()
 {
+
+    SnakeClass snerk;
+
+    std::cout << "Snake 0 x: " << snerk[0].getX() << " y: " << snerk[0].getY() << std::endl;
+    std::cout << "Snake 1 x: " << snerk[1].getX() << " y: " << snerk[1].getY() << std::endl;
+    std::cout << "Snake 2 x: " << snerk[2].getX() << " y: " << snerk[2].getY() << std::endl;
+    std::cout << "Snake 3 x: " << snerk[3].getX() << " y: " << snerk[3].getY() << std::endl;
+    std::cout << "Snake size: " << snerk.getSize() << std::endl;
+    snerk.SelfCollision();
     void 	*handle;
     void    *createV;
     
@@ -21,12 +30,11 @@ int main()
 //    void * dlopen(const char *SDL-Lib, int flag);
     GUI *fui = create("SDL",800,800); //from library
     int i;
-    SnakeClass snerk;
     FoodFactory food;
 
     food.spawn();
 
-    while (fui->isClosed())
+    while (fui->isClosed() && !snerk.SelfCollision())
     {
 
         i = fui->pollEvents();
@@ -34,11 +42,20 @@ int main()
         {
             snerk.setDir(i);
             snerk.move();
+        
+        }
+        if(food.AllEaten())
+        {
+            food.spawn();
         }
         snerk.FoodCollision(food);
         fui->clear(snerk, food);
     }
-    std::cout << "Snake direction: " << snerk.getDir();
+    std::cout << "Snake direction: " << snerk.getSize() << std::endl;
+    std::cout << "Snake 0 x: " << snerk[0].getX() << " y: " << snerk[0].getY() << std::endl;
+    std::cout << "Snake 0 x: " << snerk[1].getX() << " y: " << snerk[1].getY() << std::endl;
+    std::cout << "Snake 0 x: " << snerk[2].getX() << " y: " << snerk[2].getY() << std::endl;
+    std::cout << "Snake 0 x: " << snerk[3].getX() << " y: " << snerk[3].getY() << std::endl;
     return (0); 
     dlclose(handle);
 }
