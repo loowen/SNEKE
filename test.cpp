@@ -22,14 +22,19 @@ int main()
     GUI *fui = create("SDL",800,800); //from library
     int i;
     SnakeClass snerk;
+    FoodFactory food;
+
+    food.spawn();
 
     while (fui->isClosed())
     {
+
         i = fui->pollEvents();
         if (i != 0 && i != 3)
         {
             snerk.setDir(i);
         }
+        snerk.FoodCollision(food);
         fui->clear();
     }
     std::cout << "Snake direction: " << snerk.getDir();

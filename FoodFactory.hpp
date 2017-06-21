@@ -13,12 +13,12 @@ class FoodFactory
     ~FoodFactory();
 
     FoodFactory & operator=(FoodFactory const & src);
+    Food & operator[](int a);
 
     void spawn();
     bool AllEaten();
     int getHeight()const;
     int getWidth()const;
-    bool SnakeCollision();
 
     private:
     Food *noms;

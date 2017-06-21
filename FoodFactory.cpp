@@ -33,6 +33,11 @@ FoodFactory & FoodFactory::operator=(FoodFactory const & src)
     return *this;
 }
 
+Food & FoodFactory::operator[](int a)
+{
+    return noms[a];
+}
+
 int FoodFactory::getHeight()const
 {
     return this->_height;

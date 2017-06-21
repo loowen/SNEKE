@@ -3,6 +3,8 @@
 #include <vector>
 #include <cstdlib>
 #include "snakePart.hpp"
+#include "FoodFactory.hpp"
+#include "Food.hpp"
 
 class SnakeClass
 {
@@ -16,6 +18,8 @@ class SnakeClass
     void setDir(int i);
     int getDir()const;
     int getSize();
+    void FoodCollision(FoodFactory & src);
+    void grow(int x, int y);
     
     SnakeClass & operator=(SnakeClass const & cpp);
     snakePart & operator[](int a);
@@ -23,5 +27,6 @@ class SnakeClass
 
     private:
     int _dir;
+    bool _grow;
 
 };

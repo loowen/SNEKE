@@ -39,6 +39,11 @@ bool snakePart::operator==(snakePart const & src)
     return false;
 }
 
+void snakePart::setHead(bool a)
+{
+    _head = a;
+}
+
 bool snakePart::isHead()const
 {
     return this->_head;

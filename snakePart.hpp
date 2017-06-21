@@ -10,6 +10,7 @@ class snakePart : public Entity
         snakePart(int col, int row, bool head);
         snakePart();
         ~snakePart();
+        void setHead(bool a);
         snakePart & operator=(snakePart const & src);
         bool operator==(snakePart const & src);
         private:

@@ -11,6 +11,10 @@ SnakeClass::SnakeClass()
     Snek.reserve (4);
     for (int it = 0; it != 4; ++it)
     {
+        if(it == 0)
+        {
+            this->Snek[it].setHead(true);
+        }
         this->Snek[it].setX(x);
         this->Snek[it].setY(y++);
     }
@@ -50,6 +54,8 @@ void SnakeClass::setDir(int i)
 
 void SnakeClass::move()
 {
+    int x = Snek[this->getSize()-1].getX();
+    int y = Snek[this->getSize()-1].getY();
     for (int it = this->getSize()-1; it >= 0; --it)
     {
         if (it != 0)
@@ -79,6 +85,10 @@ void SnakeClass::move()
 
         }
     }
+    if (_grow)
+    {
+        grow(x,y);
+    }
 }
 
 bool SnakeClass::SelfCollision()
@@ -97,4 +107,23 @@ bool SnakeClass::SelfCollision()
 snakePart & SnakeClass::operator[](int a)
 {
     return this->Snek[a];
+}
+
+void SnakeClass::FoodCollision(FoodFactory & src)
+{
+    for(int i = 0; i < 5; i++)
+    {
+        if(src[i].getX() == Snek[0].getX() && src[i].getY() == Snek[0].getY())
+        {
+            _grow = true;
+            src[i].setType(0);
+        }
+    }
+}
+
+void SnakeClass::grow(int x, int y)
+{
+    snakePart * n = new snakePart(x,y,false);
+    Snek.push_back(*n);
+    _grow = false;
 }
