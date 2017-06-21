@@ -105,22 +105,152 @@ GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o.provides: GUILib1/CMakeFiles/Ba
 GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o.provides.build: GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o
 
 
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o: GUILib1/CMakeFiles/BasicRender.dir/flags.make
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o: snake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicRender.dir/__/snake.cpp.o -c /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snake.cpp
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicRender.dir/__/snake.cpp.i"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snake.cpp > CMakeFiles/BasicRender.dir/__/snake.cpp.i
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicRender.dir/__/snake.cpp.s"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snake.cpp -o CMakeFiles/BasicRender.dir/__/snake.cpp.s
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o.requires:
+
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o.requires
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o.provides: GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o.requires
+	$(MAKE) -f GUILib1/CMakeFiles/BasicRender.dir/build.make GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o.provides.build
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o.provides
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o.provides.build: GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o
+
+
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o: GUILib1/CMakeFiles/BasicRender.dir/flags.make
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o: FoodFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o -c /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/FoodFactory.cpp
+
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.i"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/FoodFactory.cpp > CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.i
+
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.s"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/FoodFactory.cpp -o CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.s
+
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o.requires:
+
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o.requires
+
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o.provides: GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o.requires
+	$(MAKE) -f GUILib1/CMakeFiles/BasicRender.dir/build.make GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o.provides.build
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o.provides
+
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o.provides.build: GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o
+
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o: GUILib1/CMakeFiles/BasicRender.dir/flags.make
+GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o: Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicRender.dir/__/Entity.cpp.o -c /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/Entity.cpp
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicRender.dir/__/Entity.cpp.i"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/Entity.cpp > CMakeFiles/BasicRender.dir/__/Entity.cpp.i
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicRender.dir/__/Entity.cpp.s"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/Entity.cpp -o CMakeFiles/BasicRender.dir/__/Entity.cpp.s
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o.requires:
+
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o.requires
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o.provides: GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o.requires
+	$(MAKE) -f GUILib1/CMakeFiles/BasicRender.dir/build.make GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o.provides.build
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o.provides
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o.provides.build: GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o
+
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o: GUILib1/CMakeFiles/BasicRender.dir/flags.make
+GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o: Food.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicRender.dir/__/Food.cpp.o -c /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/Food.cpp
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicRender.dir/__/Food.cpp.i"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/Food.cpp > CMakeFiles/BasicRender.dir/__/Food.cpp.i
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicRender.dir/__/Food.cpp.s"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/Food.cpp -o CMakeFiles/BasicRender.dir/__/Food.cpp.s
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o.requires:
+
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o.requires
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o.provides: GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o.requires
+	$(MAKE) -f GUILib1/CMakeFiles/BasicRender.dir/build.make GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o.provides.build
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o.provides
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o.provides.build: GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o
+
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o: GUILib1/CMakeFiles/BasicRender.dir/flags.make
+GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o: snakePart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicRender.dir/__/snakePart.cpp.o -c /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snakePart.cpp
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicRender.dir/__/snakePart.cpp.i"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snakePart.cpp > CMakeFiles/BasicRender.dir/__/snakePart.cpp.i
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicRender.dir/__/snakePart.cpp.s"
+	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snakePart.cpp -o CMakeFiles/BasicRender.dir/__/snakePart.cpp.s
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o.requires:
+
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o.requires
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o.provides: GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o.requires
+	$(MAKE) -f GUILib1/CMakeFiles/BasicRender.dir/build.make GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o.provides.build
+.PHONY : GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o.provides
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o.provides.build: GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o
+
+
 # Object files for target BasicRender
 BasicRender_OBJECTS = \
 "CMakeFiles/BasicRender.dir/SDL.cpp.o" \
-"CMakeFiles/BasicRender.dir/__/iGUI.cpp.o"
+"CMakeFiles/BasicRender.dir/__/iGUI.cpp.o" \
+"CMakeFiles/BasicRender.dir/__/snake.cpp.o" \
+"CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o" \
+"CMakeFiles/BasicRender.dir/__/Entity.cpp.o" \
+"CMakeFiles/BasicRender.dir/__/Food.cpp.o" \
+"CMakeFiles/BasicRender.dir/__/snakePart.cpp.o"
 
 # External object files for target BasicRender
 BasicRender_EXTERNAL_OBJECTS =
 
 GUILib1/libBasicRender.dylib: GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o
 GUILib1/libBasicRender.dylib: GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o
+GUILib1/libBasicRender.dylib: GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o
+GUILib1/libBasicRender.dylib: GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o
+GUILib1/libBasicRender.dylib: GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o
+GUILib1/libBasicRender.dylib: GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o
+GUILib1/libBasicRender.dylib: GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o
 GUILib1/libBasicRender.dylib: GUILib1/CMakeFiles/BasicRender.dir/build.make
 GUILib1/libBasicRender.dylib: /nfs/zfs-student-6/users/meckhard/.brew/lib/libSDL2.dylib
 GUILib1/libBasicRender.dylib: /nfs/zfs-student-6/users/meckhard/.brew/lib/libSDL2_ttf.dylib
 GUILib1/libBasicRender.dylib: /nfs/zfs-student-6/users/meckhard/.brew/lib/libSDL2_image.dylib
 GUILib1/libBasicRender.dylib: GUILib1/CMakeFiles/BasicRender.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libBasicRender.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libBasicRender.dylib"
 	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BasicRender.dir/link.txt --verbose=$(VERBOSE)
 	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1 && /nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake -E copy_if_different libBasicRender.dylib /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
 
@@ -131,6 +261,11 @@ GUILib1/CMakeFiles/BasicRender.dir/build: GUILib1/libBasicRender.dylib
 
 GUILib1/CMakeFiles/BasicRender.dir/requires: GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o.requires
 GUILib1/CMakeFiles/BasicRender.dir/requires: GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o.requires
+GUILib1/CMakeFiles/BasicRender.dir/requires: GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o.requires
+GUILib1/CMakeFiles/BasicRender.dir/requires: GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o.requires
+GUILib1/CMakeFiles/BasicRender.dir/requires: GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o.requires
+GUILib1/CMakeFiles/BasicRender.dir/requires: GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o.requires
+GUILib1/CMakeFiles/BasicRender.dir/requires: GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o.requires
 
 .PHONY : GUILib1/CMakeFiles/BasicRender.dir/requires
 

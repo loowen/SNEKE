@@ -44,11 +44,26 @@ GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: /nfs/zfs-student-6/users/meckhard/
 GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: /nfs/zfs-student-6/users/meckhard/.brew/include/SDL2/SDL_video.h
 GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: /nfs/zfs-student-6/users/meckhard/.brew/include/SDL2/begin_code.h
 GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: /nfs/zfs-student-6/users/meckhard/.brew/include/SDL2/close_code.h
+GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: Entity.hpp
+GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: Food.hpp
+GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: FoodFactory.hpp
 GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: GUILib1/SDL.cpp
 GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: GUILib1/SDL.hpp
 GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: iGUI.hpp
 GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: snake.hpp
 GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o: snakePart.hpp
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o: Entity.cpp
+GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o: Entity.hpp
+
+GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o: Entity.hpp
+GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o: Food.cpp
+GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o: Food.hpp
+
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o: Entity.hpp
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o: Food.hpp
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o: FoodFactory.cpp
+GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o: FoodFactory.hpp
 
 GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: /nfs/zfs-student-6/users/meckhard/.brew/include/SDL2/SDL.h
 GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: /nfs/zfs-student-6/users/meckhard/.brew/include/SDL2/SDL_assert.h
@@ -93,8 +108,22 @@ GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: /nfs/zfs-student-6/users/meckh
 GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: /nfs/zfs-student-6/users/meckhard/.brew/include/SDL2/SDL_video.h
 GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: /nfs/zfs-student-6/users/meckhard/.brew/include/SDL2/begin_code.h
 GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: /nfs/zfs-student-6/users/meckhard/.brew/include/SDL2/close_code.h
+GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: Entity.hpp
+GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: Food.hpp
+GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: FoodFactory.hpp
 GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: iGUI.cpp
 GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: iGUI.hpp
 GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: snake.hpp
 GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o: snakePart.hpp
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o: Entity.hpp
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o: Food.hpp
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o: FoodFactory.hpp
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o: snake.cpp
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o: snake.hpp
+GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o: snakePart.hpp
+
+GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o: Entity.hpp
+GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o: snakePart.cpp
+GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o: snakePart.hpp
 

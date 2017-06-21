@@ -5,7 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/SDL.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/CMakeFiles/BasicRender.dir/SDL.cpp.o"
+  "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/Entity.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/CMakeFiles/BasicRender.dir/__/Entity.cpp.o"
+  "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/Food.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/CMakeFiles/BasicRender.dir/__/Food.cpp.o"
+  "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/FoodFactory.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o"
   "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/iGUI.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/CMakeFiles/BasicRender.dir/__/iGUI.cpp.o"
+  "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snake.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/CMakeFiles/BasicRender.dir/__/snake.cpp.o"
+  "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/snakePart.cpp" "/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/CMakeFiles/BasicRender.dir/__/snakePart.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

@@ -167,16 +167,14 @@ void SDL::draw(int x, int y, int r, int g, int b)
 {
         SDL_Rect rect;
 
-    rect.w = 120;
-    rect.h = 120;
+    rect.w = 20;
+    rect.h = 20;
     rect.x = x;
     rect.y = y;
 
-SDL_SetRenderDrawColor(_render, r ,g, b, 255);
-//    SDL_SetRenderDrawColor(_render, 200 ,0, 200, 255);
+    SDL_SetRenderDrawColor(_render, r ,g, b, 255);
     SDL_RenderFillRect(_render, &rect);
 
-    //SDL_RenderPresent(_render);
 }
 
 void SDL::clear(SnakeClass & src, FoodFactory & food)
@@ -188,9 +186,46 @@ void SDL::clear(SnakeClass & src, FoodFactory & food)
 
     while (i < src.getSize())
     {
-        draw(src[i].getX() , src[i].getY(), 0, 225, 0);
+        if (i == 0)
+        {
+            //draw((src[i].getX()), (src[i].getY()), 0, 225, 0);
+            switch(src[i].getDir())
+            {
+                case 1:
+                    draw((src[i].getX()), (src[i].getY()), 0, 225, 0);
+                    break;
+                case -1:
+                    draw((src[i].getX()), (src[i].getY()), 0, 225, 0);
+                    break;
+                case 2:
+                    draw((src[i].getX()), (src[i].getY()), 0, 225, 0);
+                    break;
+                case -2:
+                    draw((src[i].getX()), (src[i].getY()), 0, 225, 0);
+                    break;
+            }
+        }
+        else
+        {
+            switch(src[i].getDir())
+            {
+                case 1:
+                    draw((src[i].getX()), (src[i].getY()), 0, 125, 0);
+                    break;
+                case -1:
+                    draw((src[i].getX()), (src[i].getY()), 0, 125, 0);
+                    break;
+                case 2:
+                    draw((src[i].getX()), (src[i].getY()), 0, 125, 0);
+                    break;
+                case -2:
+                    draw((src[i].getX()), (src[i].getY()), 0, 125, 0);
+                    break;
+            }
+                
+        }
         i++;
-    }
+   }
 
     int j = 0;
     while (j < 5)
@@ -202,7 +237,5 @@ void SDL::clear(SnakeClass & src, FoodFactory & food)
         j++;
     }
 
-  //  draw();
-    //draw();
     SDL_RenderPresent(_render);
 }

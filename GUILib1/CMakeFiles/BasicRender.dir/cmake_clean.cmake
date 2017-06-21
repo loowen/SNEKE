@@ -1,6 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/BasicRender.dir/SDL.cpp.o"
   "CMakeFiles/BasicRender.dir/__/iGUI.cpp.o"
+  "CMakeFiles/BasicRender.dir/__/snake.cpp.o"
+  "CMakeFiles/BasicRender.dir/__/FoodFactory.cpp.o"
+  "CMakeFiles/BasicRender.dir/__/Entity.cpp.o"
+  "CMakeFiles/BasicRender.dir/__/Food.cpp.o"
+  "CMakeFiles/BasicRender.dir/__/snakePart.cpp.o"
   "libBasicRender.pdb"
   "libBasicRender.dylib"
 )

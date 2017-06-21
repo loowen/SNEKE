@@ -5,10 +5,10 @@
 Food::Food()
 {
     srand(clock());
-    int a = rand() % 100 + 1;
-    this->setX(a);
-    a = rand() % 100 + 1;
-    this->setY(a);
+    int a = rand() % 10 + 1;
+    this->setX(a * 20);
+    a = rand() % 10 + 1;
+    this->setY(a * 20);
     this->setType(1);
 }
 

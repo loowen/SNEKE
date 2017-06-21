@@ -7,7 +7,7 @@ SnakeClass::SnakeClass(SnakeClass const & src)
 
 SnakeClass::SnakeClass()
 {
-    int x = 400, y = 400;
+    int x = 20, y = 20;
     snakePart * n = new snakePart(x,y,false);
     //snek.push_back(n)
     for (int it = 0; it != 4; ++it)
@@ -25,9 +25,9 @@ SnakeClass::SnakeClass()
         }
         //this->Snek[it].setX(x);
         //this->Snek[it].setY(y);
-        y++;
+        y = y + 10;
     }
-    this->_dir = 1;
+    this->_dir = -2;
 }
 
 SnakeClass::~SnakeClass()
@@ -66,24 +66,29 @@ void SnakeClass::move()
         {
             this->Snek[it].setX(this->Snek[it-1].getX());
             this->Snek[it].setY(this->Snek[it-1].getY());
+            this->Snek[it].setDir(this->Snek[it-1].getDir());
         }
         else
         {
             switch(this->_dir)
             {
                 case 1:
-                    if (this->Snek[it].getY() - 1 != 0)
-                        this->Snek[it].setY(this->Snek[it].getY() - 1);
+                    if (this->Snek[it].getY() - 20 > 0)
+                        this->Snek[it].setY(this->Snek[it].getY() - 20);
+                        this->Snek[it].setDir(1);
                     break;
                 case -1:
-                    this->Snek[it].setY(this->Snek[it].getY() + 1);
+                    this->Snek[it].setY(this->Snek[it].getY() + 20);
+                    this->Snek[it].setDir(-1);
                     break;
                 case 2:
-                    if(this->Snek[it].getX() - 1 != 0)
-                        this->Snek[it].setX(this->Snek[it].getX() - 1);
+                    if(this->Snek[it].getX() - 20 > 0)
+                        this->Snek[it].setX(this->Snek[it].getX() - 20);
+                        this->Snek[it].setDir(2);
                     break;
                 case -2:
-                    this->Snek[it].setX(this->Snek[it].getX() + 1);
+                    this->Snek[it].setX(this->Snek[it].getX() + 20);
+                    this->Snek[it].setDir(-2);
                     break;
             }
 
@@ -97,7 +102,6 @@ void SnakeClass::move()
 
 bool SnakeClass::SelfCollision()
 {   
-    std::cout << "it" <<std::endl;
     for(int it = this->getSize()-1; it > 0 ; --it)
     {
         if (Snek[it] == Snek[0])

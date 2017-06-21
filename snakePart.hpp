@@ -10,9 +10,12 @@ class snakePart : public Entity
         snakePart(int col, int row, bool head);
         snakePart();
         ~snakePart();
+        int getDir();
+        void setDir(int i);
         void setHead(bool a);
         snakePart & operator=(snakePart const & src);
         bool operator==(snakePart const & src);
         private:
         bool _head;
+        int _dir;
     };

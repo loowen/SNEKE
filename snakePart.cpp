@@ -48,3 +48,13 @@ bool snakePart::isHead()const
 {
     return this->_head;
 }
+
+int snakePart::getDir()
+{
+    return this->_dir;
+}
+
+void snakePart::setDir(int i)
+{
+    this->_dir = i;
+}
