@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake
+CMAKE_COMMAND = /nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake
 
 # The command to remove a file.
-RM = /nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake -E remove -f
+RM = /nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
+CMAKE_SOURCE_DIR = /nfs/zfs-student-6/users/lhamlyn/Work/snerk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
+CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/lhamlyn/Work/snerk
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/lhamlyn/Work/snerk/CMakeFiles /nfs/zfs-student-6/users/lhamlyn/Work/snerk/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/lhamlyn/Work/snerk/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -148,6 +148,19 @@ BasicRender2: cmake_check_build_system
 BasicRender2/fast:
 	$(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/build
 .PHONY : BasicRender2/fast
+
+#=============================================================================
+# Target rules for targets named BasicRender3
+
+# Build rule for target.
+BasicRender3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BasicRender3
+.PHONY : BasicRender3
+
+# fast build rule for target.
+BasicRender3/fast:
+	$(MAKE) -f GUILib3/CMakeFiles/BasicRender3.dir/build.make GUILib3/CMakeFiles/BasicRender3.dir/build
+.PHONY : BasicRender3/fast
 
 Entity.o: Entity.cpp.o
 
@@ -322,6 +335,7 @@ help:
 	@echo "... nibbler"
 	@echo "... BasicRender"
 	@echo "... BasicRender2"
+	@echo "... BasicRender3"
 	@echo "... Entity.o"
 	@echo "... Entity.i"
 	@echo "... Entity.s"

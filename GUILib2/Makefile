@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake
+CMAKE_COMMAND = /nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake
 
 # The command to remove a file.
-RM = /nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake -E remove -f
+RM = /nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
+CMAKE_SOURCE_DIR = /nfs/zfs-student-6/users/lhamlyn/Work/snerk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
+CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/lhamlyn/Work/snerk
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/nfs/zfs-student-6/users/meckhard/.brew/Cellar/cmake/3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/nfs/zfs-student-6/users/lhamlyn/.brew/Cellar/cmake/3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib2/CMakeFiles/progress.marks
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f CMakeFiles/Makefile2 GUILib2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/CMakeFiles 0
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/lhamlyn/Work/snerk/CMakeFiles /nfs/zfs-student-6/users/lhamlyn/Work/snerk/GUILib2/CMakeFiles/progress.marks
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f CMakeFiles/Makefile2 GUILib2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/zfs-student-6/users/lhamlyn/Work/snerk/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f CMakeFiles/Makefile2 GUILib2/clean
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f CMakeFiles/Makefile2 GUILib2/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f CMakeFiles/Makefile2 GUILib2/preinstall
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f CMakeFiles/Makefile2 GUILib2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f CMakeFiles/Makefile2 GUILib2/preinstall
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f CMakeFiles/Makefile2 GUILib2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 GUILib2/CMakeFiles/BasicRender2.dir/rule:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f CMakeFiles/Makefile2 GUILib2/CMakeFiles/BasicRender2.dir/rule
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f CMakeFiles/Makefile2 GUILib2/CMakeFiles/BasicRender2.dir/rule
 .PHONY : GUILib2/CMakeFiles/BasicRender2.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ BasicRender2: GUILib2/CMakeFiles/BasicRender2.dir/rule
 
 # fast build rule for target.
 BasicRender2/fast:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/build
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/build
 .PHONY : BasicRender2/fast
 
 SDL.o: SDL.cpp.o
@@ -131,7 +131,7 @@ SDL.o: SDL.cpp.o
 
 # target to build an object file
 SDL.cpp.o:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/SDL.cpp.o
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/SDL.cpp.o
 .PHONY : SDL.cpp.o
 
 SDL.i: SDL.cpp.i
@@ -140,7 +140,7 @@ SDL.i: SDL.cpp.i
 
 # target to preprocess a source file
 SDL.cpp.i:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/SDL.cpp.i
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/SDL.cpp.i
 .PHONY : SDL.cpp.i
 
 SDL.s: SDL.cpp.s
@@ -149,7 +149,7 @@ SDL.s: SDL.cpp.s
 
 # target to generate assembly for a file
 SDL.cpp.s:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/SDL.cpp.s
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/SDL.cpp.s
 .PHONY : SDL.cpp.s
 
 __/Entity.o: __/Entity.cpp.o
@@ -158,7 +158,7 @@ __/Entity.o: __/Entity.cpp.o
 
 # target to build an object file
 __/Entity.cpp.o:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Entity.cpp.o
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Entity.cpp.o
 .PHONY : __/Entity.cpp.o
 
 __/Entity.i: __/Entity.cpp.i
@@ -167,7 +167,7 @@ __/Entity.i: __/Entity.cpp.i
 
 # target to preprocess a source file
 __/Entity.cpp.i:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Entity.cpp.i
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Entity.cpp.i
 .PHONY : __/Entity.cpp.i
 
 __/Entity.s: __/Entity.cpp.s
@@ -176,7 +176,7 @@ __/Entity.s: __/Entity.cpp.s
 
 # target to generate assembly for a file
 __/Entity.cpp.s:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Entity.cpp.s
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Entity.cpp.s
 .PHONY : __/Entity.cpp.s
 
 __/Food.o: __/Food.cpp.o
@@ -185,7 +185,7 @@ __/Food.o: __/Food.cpp.o
 
 # target to build an object file
 __/Food.cpp.o:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Food.cpp.o
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Food.cpp.o
 .PHONY : __/Food.cpp.o
 
 __/Food.i: __/Food.cpp.i
@@ -194,7 +194,7 @@ __/Food.i: __/Food.cpp.i
 
 # target to preprocess a source file
 __/Food.cpp.i:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Food.cpp.i
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Food.cpp.i
 .PHONY : __/Food.cpp.i
 
 __/Food.s: __/Food.cpp.s
@@ -203,7 +203,7 @@ __/Food.s: __/Food.cpp.s
 
 # target to generate assembly for a file
 __/Food.cpp.s:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Food.cpp.s
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/Food.cpp.s
 .PHONY : __/Food.cpp.s
 
 __/FoodFactory.o: __/FoodFactory.cpp.o
@@ -212,7 +212,7 @@ __/FoodFactory.o: __/FoodFactory.cpp.o
 
 # target to build an object file
 __/FoodFactory.cpp.o:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/FoodFactory.cpp.o
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/FoodFactory.cpp.o
 .PHONY : __/FoodFactory.cpp.o
 
 __/FoodFactory.i: __/FoodFactory.cpp.i
@@ -221,7 +221,7 @@ __/FoodFactory.i: __/FoodFactory.cpp.i
 
 # target to preprocess a source file
 __/FoodFactory.cpp.i:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/FoodFactory.cpp.i
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/FoodFactory.cpp.i
 .PHONY : __/FoodFactory.cpp.i
 
 __/FoodFactory.s: __/FoodFactory.cpp.s
@@ -230,7 +230,7 @@ __/FoodFactory.s: __/FoodFactory.cpp.s
 
 # target to generate assembly for a file
 __/FoodFactory.cpp.s:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/FoodFactory.cpp.s
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/FoodFactory.cpp.s
 .PHONY : __/FoodFactory.cpp.s
 
 __/iGUI.o: __/iGUI.cpp.o
@@ -239,7 +239,7 @@ __/iGUI.o: __/iGUI.cpp.o
 
 # target to build an object file
 __/iGUI.cpp.o:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/iGUI.cpp.o
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/iGUI.cpp.o
 .PHONY : __/iGUI.cpp.o
 
 __/iGUI.i: __/iGUI.cpp.i
@@ -248,7 +248,7 @@ __/iGUI.i: __/iGUI.cpp.i
 
 # target to preprocess a source file
 __/iGUI.cpp.i:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/iGUI.cpp.i
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/iGUI.cpp.i
 .PHONY : __/iGUI.cpp.i
 
 __/iGUI.s: __/iGUI.cpp.s
@@ -257,7 +257,7 @@ __/iGUI.s: __/iGUI.cpp.s
 
 # target to generate assembly for a file
 __/iGUI.cpp.s:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/iGUI.cpp.s
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/iGUI.cpp.s
 .PHONY : __/iGUI.cpp.s
 
 __/snake.o: __/snake.cpp.o
@@ -266,7 +266,7 @@ __/snake.o: __/snake.cpp.o
 
 # target to build an object file
 __/snake.cpp.o:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snake.cpp.o
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snake.cpp.o
 .PHONY : __/snake.cpp.o
 
 __/snake.i: __/snake.cpp.i
@@ -275,7 +275,7 @@ __/snake.i: __/snake.cpp.i
 
 # target to preprocess a source file
 __/snake.cpp.i:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snake.cpp.i
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snake.cpp.i
 .PHONY : __/snake.cpp.i
 
 __/snake.s: __/snake.cpp.s
@@ -284,7 +284,7 @@ __/snake.s: __/snake.cpp.s
 
 # target to generate assembly for a file
 __/snake.cpp.s:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snake.cpp.s
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snake.cpp.s
 .PHONY : __/snake.cpp.s
 
 __/snakePart.o: __/snakePart.cpp.o
@@ -293,7 +293,7 @@ __/snakePart.o: __/snakePart.cpp.o
 
 # target to build an object file
 __/snakePart.cpp.o:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snakePart.cpp.o
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snakePart.cpp.o
 .PHONY : __/snakePart.cpp.o
 
 __/snakePart.i: __/snakePart.cpp.i
@@ -302,7 +302,7 @@ __/snakePart.i: __/snakePart.cpp.i
 
 # target to preprocess a source file
 __/snakePart.cpp.i:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snakePart.cpp.i
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snakePart.cpp.i
 .PHONY : __/snakePart.cpp.i
 
 __/snakePart.s: __/snakePart.cpp.s
@@ -311,7 +311,7 @@ __/snakePart.s: __/snakePart.cpp.s
 
 # target to generate assembly for a file
 __/snakePart.cpp.s:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snakePart.cpp.s
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/__/snakePart.cpp.s
 .PHONY : __/snakePart.cpp.s
 
 # Help Target
@@ -355,6 +355,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /nfs/zfs-student-6/users/lhamlyn/Work/snerk && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

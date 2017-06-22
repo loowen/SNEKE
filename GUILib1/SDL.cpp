@@ -21,14 +21,14 @@ SDL::SDL()
 SDL::SDL(const std::string &title, int width, int height) :
 _title(title), _width(width), _height(height)
 {
-    if (!init())
+    /*if (!init())
     {
         this->_closed = false;
     }
     else
     {
         this->_closed = true;
-    }
+    }*/
 }
 
 SDL & SDL::operator=(SDL const & src)
@@ -149,6 +149,17 @@ int SDL::pollEvents()
                         return -2;
                         break;
 
+                    case SDLK_1 :
+                        return 4;
+                        break;
+
+                    case SDLK_2 :
+                        return 5;
+                        break;
+
+                    case SDLK_3 :
+                        return 6;
+
                     default:
                         return 3;
                         break; 
@@ -238,4 +249,19 @@ void SDL::clear(SnakeClass & src, FoodFactory & food)
     }
 
     SDL_RenderPresent(_render);
+}
+
+void			SDL::setWindow(void *win)
+{
+	_window = reinterpret_cast<SDL_Window*>(win);
+}
+void			SDL::setRenderer(void *ren)
+{
+	_render = reinterpret_cast<SDL_Renderer*>(ren);
+}
+
+void			SDL::passWindow(GUI *lib)
+{
+	lib->setWindow(reinterpret_cast<void*>(_window));
+	lib->setRenderer(reinterpret_cast<void*>(_render));
 }

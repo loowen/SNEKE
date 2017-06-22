@@ -19,6 +19,12 @@ public:
     //virtual void clear() = 0;
     virtual void clear(SnakeClass & src, FoodFactory & food) = 0;
     virtual bool isClosed() const = 0;
+
+	virtual void			passWindow(GUI *guiLib) = 0;
+
+	virtual	void			setWindow(void *win) = 0;
+	virtual	void			setRenderer(void *ren) = 0;
+    virtual bool            init() = 0;
     virtual ~GUI() {};
 };
 

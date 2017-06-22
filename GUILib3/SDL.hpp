@@ -26,6 +26,9 @@ public:
     int getwidth()const;
     int getheight()const;
     bool getclosed()const;
+    void setWindow(void *win);
+    void setRenderer(void *ren);
+    void passWindow(GUI *lib);
   //  SDL_Window* getwindow();
  //   SDL_Renderer* getrender();
 
