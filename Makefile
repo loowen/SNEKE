@@ -136,6 +136,19 @@ BasicRender/fast:
 	$(MAKE) -f GUILib1/CMakeFiles/BasicRender.dir/build.make GUILib1/CMakeFiles/BasicRender.dir/build
 .PHONY : BasicRender/fast
 
+#=============================================================================
+# Target rules for targets named BasicRender2
+
+# Build rule for target.
+BasicRender2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BasicRender2
+.PHONY : BasicRender2
+
+# fast build rule for target.
+BasicRender2/fast:
+	$(MAKE) -f GUILib2/CMakeFiles/BasicRender2.dir/build.make GUILib2/CMakeFiles/BasicRender2.dir/build
+.PHONY : BasicRender2/fast
+
 Entity.o: Entity.cpp.o
 
 .PHONY : Entity.o
@@ -308,6 +321,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... nibbler"
 	@echo "... BasicRender"
+	@echo "... BasicRender2"
 	@echo "... Entity.o"
 	@echo "... Entity.i"
 	@echo "... Entity.s"

@@ -46,7 +46,7 @@ int main(/*int argv, char **argc*/)
         void    *createV;
     
         //Access the library 
-	    handle = dlopen ("libBasicRender.dylib", RTLD_LAZY);
+	    handle = dlopen ("libBasicRender2.dylib", RTLD_LAZY);
         //if null lib was not opened
         //look for function called "create"  
         createV = dlsym(handle, "create");

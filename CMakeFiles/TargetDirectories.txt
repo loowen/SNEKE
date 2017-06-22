@@ -4,3 +4,6 @@
 /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/CMakeFiles/rebuild_cache.dir
 /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/CMakeFiles/edit_cache.dir
 /nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/CMakeFiles/BasicRender.dir
+/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib2/CMakeFiles/rebuild_cache.dir
+/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib2/CMakeFiles/edit_cache.dir
+/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib2/CMakeFiles/BasicRender2.dir

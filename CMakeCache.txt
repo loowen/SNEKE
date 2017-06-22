@@ -18,6 +18,15 @@
 BREW_LIB:PATH=BREW_LIB-NOTFOUND
 
 //Value Computed by CMake
+BasicRender2_BINARY_DIR:STATIC=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib2
+
+//Dependencies for the target
+BasicRender2_LIB_DEPENDS:STATIC=general;/nfs/zfs-student-6/users/meckhard/.brew/lib/libSDL2.dylib;general;/nfs/zfs-student-6/users/meckhard/.brew/lib/libSDL2_ttf.dylib;general;/nfs/zfs-student-6/users/meckhard/.brew/lib/libSDL2_image.dylib;
+
+//Value Computed by CMake
+BasicRender2_SOURCE_DIR:STATIC=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib2
+
+//Value Computed by CMake
 BasicRender_BINARY_DIR:STATIC=/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1
 
 //Dependencies for the target
@@ -299,7 +308,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

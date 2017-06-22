@@ -30,6 +30,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib1/cmake_install.cmake")
+  include("/nfs/zfs-student-6/users/meckhard/Wethinkcode/snek/GUILib2/cmake_install.cmake")
 
 endif()
 

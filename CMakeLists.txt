@@ -28,3 +28,5 @@ set(CALLED_FROM_PARENT true)
 set(BASE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_subdirectory(GUILib1)
+add_subdirectory(GUILib2)
+add_subdirectory(GUILib3)
