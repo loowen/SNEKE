@@ -15,10 +15,10 @@ Food::Food()
 Food::Food(int height, int width)
 {
     srand(clock());
-    int a = rand() % width + 1;
-    this->setX(a);
-    a = rand() % height + 1;
-    this->setY(a);
+    int a = (rand() % (width/20)) + 1;
+    this->setX(a * 20);
+    a = (rand() % (height/20)) + 1;
+    this->setY(a * 20);
     this->setType(1);
 }
 

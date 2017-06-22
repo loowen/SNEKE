@@ -2,8 +2,8 @@
 
 FoodFactory::FoodFactory()
 {
-    _height = 100;
-    _width = 100;
+    _height = 780;
+    _width = 780;
     spawn();
 }
 

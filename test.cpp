@@ -56,23 +56,30 @@ int main(/*int argv, char **argc*/)
     //    void * dlopen(const char *SDL-Lib, int flag);
         GUI *fui = create("SDL",800,800); //from library
         int i;
+        int a = 0;
         FoodFactory food;
 
         food.spawn();
 
         while (fui->isClosed() && !snerk.SelfCollision())
         {
-
+            a++;
             i = fui->pollEvents();
             if (i != 0 && i != 3)
             {
                 snerk.setDir(i);
-                snerk.move();
-        
+            }
+            else if (i == 4 || i == 5 || i == 6)
+            {
+
             }
             if(food.AllEaten())
             {
                 food.spawn();
+            }
+            if (a % 100 == 0)
+            {
+                snerk.move();
             }
             snerk.FoodCollision(food);
             fui->clear(snerk, food);

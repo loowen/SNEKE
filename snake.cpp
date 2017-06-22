@@ -73,21 +73,23 @@ void SnakeClass::move()
             switch(this->_dir)
             {
                 case 1:
-                    if (this->Snek[it].getY() - 20 > 0)
+                    if (this->Snek[it].getY() - 20 >= 0)
                         this->Snek[it].setY(this->Snek[it].getY() - 20);
                         this->Snek[it].setDir(1);
                     break;
                 case -1:
-                    this->Snek[it].setY(this->Snek[it].getY() + 20);
+                    if(this->Snek[it].getY() + 20 <= 780)
+                        this->Snek[it].setY(this->Snek[it].getY() + 20);
                     this->Snek[it].setDir(-1);
                     break;
                 case 2:
-                    if(this->Snek[it].getX() - 20 > 0)
+                    if(this->Snek[it].getX() - 20 >= 0)
                         this->Snek[it].setX(this->Snek[it].getX() - 20);
-                        this->Snek[it].setDir(2);
+                    this->Snek[it].setDir(2);
                     break;
                 case -2:
-                    this->Snek[it].setX(this->Snek[it].getX() + 20);
+                    if (this->Snek[it].getX() + 20 <= 780)
+                        this->Snek[it].setX(this->Snek[it].getX() + 20);
                     this->Snek[it].setDir(-2);
                     break;
             }
